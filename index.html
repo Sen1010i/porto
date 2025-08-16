@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pep | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <h1>Pep · Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="toggle-dark">🌙</button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>I build user-friendly websites & simple businesses</h2>
+      <p>Junior Web Developer · Business Builder · Open to Internship</p>
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="Pep_CV.pdf" class="btn-outline">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Pep, a self-driven junior developer with a strong eye for UI and practical business thinking.
+      Skilled in HTML, CSS, JavaScript, React, and small business operations.
+    </p>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Owner – Home Food Business</h3>
+      <p>2024 – 2025</p>
+      <ul>
+        <li>Managed production, packaging, and delivery</li>
+        <li>Promoted on Instagram/WhatsApp</li>
+        <li>Handled stock and financial reporting</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Web Project – Nail Art Portfolio</h3>
+      <p>2024</p>
+      <ul>
+        <li>Built product gallery + contact CTA</li>
+        <li>Added auto-slide image carousel</li>
+        <li>Optimized mobile experience</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project1.jpg" alt="FFCineShop" />
+        <h3>FFCineShop Microsite</h3>
+        <p>Landing page with WhatsApp order CTA, auto-slide carousel, and QRIS note.</p>
+        <a href="#" target="_blank">Live</a>
+        <a href="#" target="_blank">Code</a>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Nail Art Portfolio" />
+        <h3>Nail Art Portfolio</h3>
+        <p>Gallery-style portfolio with contact form and Instagram embed.</p>
+        <a href="#" target="_blank">Live</a>
+        <a href="#" target="_blank">Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="direct">
+      <p>Email: youremail@example.com</p>
+      <p>Phone: +62-8xx-xxxx-xxxx</p>
+      <p>GitHub | LinkedIn</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Pep. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
