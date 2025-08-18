@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jason Alvin Su | Portfolio</title>
+  <title>p | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- ===== NAVBAR ===== -->
   <header>
     <nav class="navbar">
-      <h1>Jason Alvin Su · Portfolio</h1>
+      <h1>p · Portfolio</h1>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -24,6 +24,8 @@
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="hero-text">
+      <div>
+      </div>
       <h2>I build user-friendly websites & simple businesses</h2>
       <p>Junior Web Developer · Business Builder · Open to Internship</p>
       <a href="#projects" class="btn">View Projects</a>
@@ -32,15 +34,17 @@
   </section>
 
   <!-- ===== ABOUT ===== -->
+  <section id="about"></section>
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I’m Pep, a self-driven junior developer with a strong eye for UI and practical business thinking.
+      I’m p, a self-driven junior developer with a strong eye for UI and practical business thinking.
       Skilled in HTML, CSS, JavaScript, React, and small business operations.
     </p>
   </section>
 
   <!-- ===== EXPERIENCE ===== -->
+  <section id="experience"></section>
   <section id="experience">
     <h2>Experience</h2>
     <div class="card">
@@ -64,10 +68,12 @@
   </section>
 
   <!-- ===== PROJECTS ===== -->
+  <section id="projects"></section>
   <section id="projects">
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="project-card">
+        <a href="@" target="_blank"></a>
         <img src="project1.jpg" alt="FFCineShop" />
         <h3>FFCineShop Microsite</h3>
         <p>Landing page with WhatsApp order CTA, auto-slide carousel, and QRIS note.</p>
@@ -85,23 +91,48 @@
   </section>
 
   <!-- ===== CONTACT ===== -->
+  <section id="contact"></section>
   <section id="contact">
     <h2>Contact</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
+    <form id="contactForm">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" id="name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email" id="email" required />
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Message" id="message" required></textarea>
+      </div>
+      <div>
+      <button type="submit" class="btn">Send</button>
+      </div>
     </form>
     <div class="direct">
-      <p>Email: jason04alvin@gmail.com</p>
+      <p>Email: com</p>
       <p>Phone: +62-8xx-xxxx-xxxx</p>
       <p>GitHub | LinkedIn</p>
     </div>
   </section>
+ <!--
+  <form id="contactForm">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" required></textarea>
+  </div>
+  <button type="submit">Send</button>
+</form>  -->
 
   <footer>
-    <p>© 2025  Jason Alvin Su. All rights reserved.</p>
+    <p>© 2025  p. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

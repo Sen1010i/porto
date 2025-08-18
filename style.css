@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,9 +13,10 @@ body {
 header {
   background: #111;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar {
@@ -32,18 +37,33 @@ header {
 }
 
 .hero {
-  background: url("hero.jpg") center/cover no-repeat;
+  background: url("hero.png") center/cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 8.5rem 2rem 2.5rem;
+  overflow: visible;
+  min-height: 100vh;
+
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn {
   background: #0077ff;
-  color: #fff;
+  color: #ffffff;
   padding: 0.7rem 1.2rem;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: none;
+  display: inline-block;
+  z-index: 1;
+
+
 }
 
 .btn-outline {
@@ -52,7 +72,49 @@ header {
   padding: 0.7rem 1.2rem;
   border-radius: 6px;
   text-decoration: none;
+  display: inline-block;
+  z-index: 1;
+  margin-top: 5rem;
 }
+
+button {
+  position: relative;
+  padding: 0.7rem  1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: rgb(122, 122, 122);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background 0.3s;
+    position: relative;      /* penting untuk ripple */
+  overflow: hidden;        /* biar bubble nggak keluar */
+}
+
+button:hover {
+  background: #121212;
+}
+.btn:hover {
+  background: rgb(118, 182, 255);
+}
+
+
+/* Ripple Effect */
+.ripple-circle {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  background-color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
 
 section {
   padding: 3rem 2rem;
@@ -77,3 +139,52 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode label {
+  color: #f5f5f5;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+#darkModeToggle {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+form {
+  max-width: 400px;
+  margin-left: px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
